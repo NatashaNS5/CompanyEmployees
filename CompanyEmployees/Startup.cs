@@ -38,7 +38,6 @@ public class Startup
         else
         {
         }
-
         app.UseHttpsRedirection();
         app.UseStaticFiles();
         app.UseCors("CorsPolicy");
