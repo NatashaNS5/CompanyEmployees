@@ -7,9 +7,4 @@
         void LogDebug(string message);
         void LogError(string message);
     }
-
-    public class Class1
-    {
-
-    }
 }
