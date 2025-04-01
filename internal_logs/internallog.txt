@@ -2653,3 +2653,28 @@
 2025-04-01 22:58:38.7432 Trace FileTarget(Name=logfile) has 2 layouts
 2025-04-01 22:58:38.7637 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
 2025-04-01 22:58:38.7637 Info Configuration initialized.
+2025-04-01 23:01:28.6341 Info AppDomain Shutting down. LogFactory closing...
+2025-04-01 23:01:28.6341 Debug Stop watching file-filter 'nlog.config' in directory: C:\Users\USER\Desktop\CompanyEmployees\CompanyEmployees
+2025-04-01 23:01:28.6341 Trace Flushing all 1 targets...
+2025-04-01 23:01:28.6341 Trace ForEachItemInParallel() 1 items
+2025-04-01 23:01:28.6560 Trace FileTarget(Name=logfile): FlushAsync
+2025-04-01 23:01:28.6560 Trace Continuation invoked: 
+2025-04-01 23:01:28.6560 Trace Parallel task completed. 0 items remaining
+2025-04-01 23:01:28.6560 Debug Flush completed
+2025-04-01 23:01:28.6560 Trace FileTarget(Name=logfile): FlushAsync Done
+2025-04-01 23:01:28.6638 Debug Closing logging configuration...
+2025-04-01 23:01:28.6638 Trace Closing FileTarget(Name=logfile)
+2025-04-01 23:01:28.6638 Debug FileTarget(Name=logfile): Closing...
+2025-04-01 23:01:28.6638 Debug FileTarget(Name=logfile): Closed.
+2025-04-01 23:01:28.6638 Trace Closing C:\Users\USER\Desktop\CompanyEmployees\logs\${shortdate}_logfile.txt
+2025-04-01 23:01:28.6638 Trace Closing Layout Renderer: ${literal}
+2025-04-01 23:01:28.6638 Trace Closing Layout Renderer: ${shortdate}
+2025-04-01 23:01:28.6638 Trace Closing Layout Renderer: ${literal}
+2025-04-01 23:01:28.6638 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2025-04-01 23:01:28.6638 Trace Closing Layout Renderer: ${longdate}
+2025-04-01 23:01:28.6638 Trace Closing Layout Renderer: ${literal}
+2025-04-01 23:01:28.6638 Trace Closing Layout Renderer: ${level}
+2025-04-01 23:01:28.6638 Trace Closing Layout Renderer: ${literal}
+2025-04-01 23:01:28.6638 Trace Closing Layout Renderer: ${message}
+2025-04-01 23:01:28.6787 Debug Finished closing logging configuration.
+2025-04-01 23:01:28.6787 Info LogFactory has been closed.
