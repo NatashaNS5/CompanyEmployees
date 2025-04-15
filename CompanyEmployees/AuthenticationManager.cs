@@ -40,9 +40,9 @@ namespace CompanyEmployees
         private async Task<List<Claim>> GetClaims()
         {
             var claims = new List<Claim>
-            {
-              new Claim(ClaimTypes.Name, _user.UserName)
-             };
+        {
+             new Claim(ClaimTypes.Name, _user.UserName)
+            };
             var roles = await _userManager.GetRolesAsync(_user);
             foreach (var role in roles)
             {
@@ -54,14 +54,7 @@ namespace CompanyEmployees
         {
             var jwtSettings = _configuration.GetSection("JwtSettings");
             var tokenOptions = new JwtSecurityToken
-            (
-            issuer: jwtSettings.GetSection("validIssuer").Value,
-            audience: jwtSettings.GetSection("validAudience").Value,
-            claims: claims,
-            expires:DateTime.Now.AddMinutes(Convert.ToDouble(jwtSettings.GetSection("expires").Value)
-            ),
-            signingCredentials: signingCredentials
-            );
+            (issuer: jwtSettings.GetSection("validIssuer").Value, audience: jwtSettings.GetSection("validAudience").Value, claims: claims, expires: DateTime.Now.AddMinutes(Convert.ToDouble(jwtSettings.GetSection("expires").Value)),signingCredentials: signingCredentials );
             return tokenOptions;
         }
     }
