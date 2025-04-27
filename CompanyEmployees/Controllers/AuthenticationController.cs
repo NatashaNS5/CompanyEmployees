@@ -26,7 +26,7 @@ namespace CompanyEmployees.Controllers
             _authManager = authManager;
         }
         /// <summary>
-        /// Регистрирует нового пользователя
+        /// Регистрация нового пользователя
         /// </summary>
         /// <param name="userForRegistration"></param>.
         /// <returns>Результат регистрации</returns>.
@@ -53,7 +53,7 @@ namespace CompanyEmployees.Controllers
             return StatusCode(201);
         }
         /// <summary>
-        /// Аутентифицирует пользователя и возвращает JWT токен
+        /// Аутентификация пользователя и возвращает JWT токен
         /// </summary>
         /// <param name="user"></param>.
         /// <returns>JWT токен для авторизации</returns>.

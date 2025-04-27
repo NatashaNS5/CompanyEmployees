@@ -15,7 +15,7 @@ namespace CompanyEmployees.Controllers
             _repository = repository;
         }
         /// <summary>
-        /// Получает список всех компаний во 2 версии
+        /// Возвращает список всех компаний во 2 версии
         /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetCompanies()

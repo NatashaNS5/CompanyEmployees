@@ -27,7 +27,7 @@ namespace CompanyEmployees.Controllers
             _dataShaper = dataShaper;
         }
         /// <summary>
-        /// Получает список сотрудников для указанной компании с поддержкой фильтрации, сортировки и пагинации
+        /// Возвращает список сотрудников для указанной компании с поддержкой фильтрации, сортировки и пагинации
         /// </summary>
         /// <param name="companyId"></param>.
         /// <param name="employeeParameters">/param>.
@@ -55,7 +55,7 @@ namespace CompanyEmployees.Controllers
             return Ok(_dataShaper.ShapeData(employeesDto, employeeParameters.Fields));
         }
         /// <summary>
-        /// Получает сотрудника по ID по компании
+        /// Возвращает сотрудника по ID по компании
         /// </summary>
         /// <param name="companyId"></param>.
         /// <param name="id"></param>.
@@ -82,7 +82,7 @@ namespace CompanyEmployees.Controllers
             return Ok(employee);
         }
         /// <summary>
-        /// Создает сотрудника компании
+        /// Создание сотрудника компании
         /// </summary>
         /// <param name="companyId"></param>.
         /// <param name="employee"></param>.
@@ -118,7 +118,7 @@ namespace CompanyEmployees.Controllers
             }, employeeToReturn);
         }
         /// <summary>
-        /// Удаляет сотрудника компании
+        /// Удаление сотрудника компании
         /// </summary>
         /// <param name="companyId"></param>.
         /// <param name="id"></param>.
@@ -137,7 +137,7 @@ namespace CompanyEmployees.Controllers
             return NoContent();
         }
         /// <summary>
-        /// Обновляет данные сотрудника для компании
+        /// Обновление данных сотрудника для компании
         /// </summary>
         /// <param name="companyId"></param>.
         /// <param name="id"></param>.
@@ -158,7 +158,7 @@ namespace CompanyEmployees.Controllers
             return NoContent();
         }
         /// <summary>
-        /// Частично обновляет данные сотрудника в указанной компании
+        /// Частичное обновление данных сотрудника в указанной компании
         /// </summary>
         /// <param name="companyId"></param>.
         /// <param name="id"></param>.

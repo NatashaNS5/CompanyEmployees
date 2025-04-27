@@ -27,7 +27,7 @@ namespace CompanyEmployees.Controllers
             _mapper = mapper;
         }
         /// <summary>
-        /// Получает список всех компаний
+        /// Возвращает список всех компаний
         /// </summary>
         /// <returns> Список компаний</returns>.
         [HttpGet(Name = "GetCompanies"), Authorize(Roles = "Manager")]
@@ -41,7 +41,7 @@ namespace CompanyEmployees.Controllers
         }
 
         /// <summary>
-        /// Получает компанию по ID
+        /// Возвращает компанию по ID
         /// </summary>
         /// <param name="id"></param>.
         /// <returns>Компания с указанным ID</returns>.
@@ -66,7 +66,7 @@ namespace CompanyEmployees.Controllers
         }
 
         /// <summary>
-        /// Создает вновь созданную компанию
+        /// Создание вновь созданной компании
         /// </summary>
         /// <param name="company"></param>.
         /// <returns>Вновь созданная компания</returns>.
@@ -89,7 +89,7 @@ namespace CompanyEmployees.Controllers
             companyToReturn);
         }
         /// <summary>
-        /// Получает коллекцию компаний по ID
+        /// Возвращает коллекцию компаний по ID
         /// </summary>
         /// <param name="ids"></param>.
         /// <returns>Коллекция компаний</returns>.
@@ -116,7 +116,7 @@ namespace CompanyEmployees.Controllers
             return Ok(companiesToReturn);
         }
         /// <summary>
-        /// Создает коллекцию из новых компаний
+        /// Создание коллекции из новых компаний
         /// </summary>
         /// <param name="companyCollection"></param>.
         /// <returns>Новая коллекция созданных компаний</returns>.
@@ -146,7 +146,7 @@ namespace CompanyEmployees.Controllers
             return CreatedAtRoute("CompanyCollection", new { ids }, companyCollectionToReturn);
         }
         /// <summary>
-        /// Удаляет компанию по ID
+        /// Удаление компании по ID
         /// </summary>
         /// /// <param name="id"></param>
         /// <returns>Пустой массив данных</returns>.
@@ -165,7 +165,7 @@ namespace CompanyEmployees.Controllers
             return NoContent();
         }
         /// <summary>
-        /// Обновляет данные компании
+        /// Обновление данных компании
         /// </summary>
         /// <param name="id"></param>.
         /// <param name="company">Данные для обновления (CompanyForUpdateDto)</param>.
